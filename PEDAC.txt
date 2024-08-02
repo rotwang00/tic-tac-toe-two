@@ -1,0 +1,45 @@
+Tic-Tac-Toe PEDAC
+
+Big picture: I will write two versions, one in the console using only JavaScript, and one also using HTML and CSS.
+
+---------------
+Console version
+---------------
+
+PROBLEM
+=======
+Input: When prompted to make a move, a sample board with numbers in the squares is printed to the console.The user will input a number 1-9 to make a move. This move is checked for legality. Illegal moves will be rejected, and the player will be prompted again. One can also enter Q to quit. If a win is detected, the player is prompted for a rematch.
+
+Output: After the player move, the board is updated and printed to the console. The computer will 'think' for a few seconds, then make a move of its own. In the first version this move will be random. Intelligence may be added in the future. After the computer's move, the new board will print to the console. After any move, the board is checked for winning or draw conditions.
+
+EXAMPLES
+========
+The player enters '1', the top-left square of the board. Since that square is empty, the player's token is placed there. The board is printed to the console.
+
+The computer chooses a random empty square and makes a move. The board is printed to the console.
+
+After each turn, the board is checked for a winning or draw condition.
+
+DATA STRUCTURE
+==============
+The board could be stored in either a one- or two-dimensional array. I will try one-dimensional in this first version of the program.
+
+1|2|3
+-----
+4|5|6
+-----
+7|8|9
+
+The square numbers will be one digit higher than the array indexes. The content of each element will begin at 0. A player token is 1, and a computer token is 2. When the board is printed to the console, these numbers will be converted to blank, X, or O. The player will always be X.
+
+ALGORITHM
+=========
+Functions:
+  Create new board
+  Get and verify player input
+  Display board
+  Make computer move
+  Check for win/draw
+  Ask for rematch
+
+
